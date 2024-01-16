@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU scheduling</title>
+    <link rel="icon" href="operating-system.png" type="image/x-icon">
+<link rel="stylesheet" href="style1.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <!-- <h2 id="h">CPU Scheduling</h2> -->
+   <div id="as">
+     <img src="operating-system.png" class="logo" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" >
+     <div class="co"><a href="#ad"><h1 class="al">Home</h1></a> </div>
+     <div class="co"><a href="#contact"><h1 class="al1">About-us</h1></a></div>
+        <div class="text" ><h5 data-aos="fade-right" >CPU Scheduling</div></h5></div>
+   </div>
+<div id="ad" data-aos="zoom-in-up">
+
+
+   <div id="fcfs" data-aos="fade-left" data-aos-offset="500"
+   data-aos-duration="100">
+<h2>FCFS</h2>
+<p>First Come, First Served (FCFS) is a type of scheduling algorithm used by operating systems and networks to efficiently and automatically execute queued tasks, processes and requests by the order of their arrival. An FCFS scheduling algorithm may also be referred to as a first-in, first-out (FIFO) algorithm or a first-come, first-choice (FCFC) algorithm.</p>
+<a href="simulator.html"> <button class="simul">Simulator</button></a>
+</div>
+
+   <div id="sjf" data-aos="fade-right" data-aos-offset="500"
+   data-aos-duration="500" >
+    <h2>SJB</h2>
+    <p>Shortest Job First (SJF) is an algorithm in which the process having <br>the smallest execution time is chosen for the next execution. This scheduling method can be preemptive or non-preemptive. <br>It significantly reduces the average waiting time for<br> other processes awaiting execution. <br>The full form of SJF is Shortest Job First.</p>
+    <a href="simulator.html"> <button class="simul">Simulator</button></a>
+</div>
+
+<div id="non-pr"  data-aos="fade-left"data-aos-offset="500"
+data-aos-duration="500" >
+    <h2>Non-premetive</h2>
+   
+    <p>Non-preemptive Scheduling is used when a process terminates, or a process<br> switches from running to the waiting state.<br> In this scheduling, once the resources<br> (CPU cycles) are allocated to a process, the process holds the CPU till it gets terminated <br>or reaches a waiting state.In Non-preemptive Priority CPU Scheduling Algorithm,<br>IF YOU WANT TO SIMULATE.</p>
+    <a href="simulator.html"> <button class="simul">Simulator</button></a>
+</div>
+<div id="pr" data-aos="fade-right"
+
+data-aos-offset="500"
+data-aos-duration="500" >
+    <h2>Preemptive</h2>
+    <p>Preemptive scheduling is used when a process switches from running state to ready state or from the waiting state to ready state. The resources (mainly CPU cycles) are allocated to the process for a limited amount of time and then taken away, and the process is <BR>again placed back in the ready queue if that process still has CPU burst time remaining.<BR>GO TO SIMULATE </p>
+   <a href="simulator.html"> <button class="simul">Simulator</button></a>
+</div>
+</div>
+<div class="footer" data-aos="zoom-in-up">
+<!-- <h2>About us</h2> -->
+    <section class="contact" id="contact">
+
+        <!-- <h1 class="heading"> <span>contact</span> me </h1> -->
+        
+        <div class="row">
+        
+            <div class="content">
+        
+                <h3 class="title">contact info</h3>
+        
+                <div class="info">
+                    <h3>siddharthtamboli95@gmail.com </h3>
+                    <h3>  +91 9602107844</h3>
+                    <h3>  +91 9602107844 </h3>
+                    <h3>  Rajasthan -312001 </h3>
+                </div>
+        
+            </div>
+        
+            <form action="">
+        
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box"><br>
+
+                <button type="submit" class="btn"> Send  </button>
+        
+            </form>
+        
+        </div>
+        
+        </section>
+
+</div>
+
+
+    </div>
+</body>
+</html>

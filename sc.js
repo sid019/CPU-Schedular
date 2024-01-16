@@ -1,0 +1,1 @@
+// var selected = table1.row({ selected: true }); $('#it1').text(selected.data().t1); $('#t2').text(selected.data().t2); $('#t3').text(selected.data().t3); icd10 .on('select', function (e, dt, tp, indexes) { var selected = dt.row({ selected: true }); $('#t1').text(selected.data().t1); $('#t2').text(selected.data().t2); $('#t3').text(selected.data().t3); });

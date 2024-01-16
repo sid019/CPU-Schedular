@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Simulator</title>
+    <link rel="icon" href="operating-system.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <script defer src="script.js"></script>
+    
+   <div id="buble" > 
+       <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" >
+        <!-- <img src="an.png" >
+        <img src="an.png" >
+        <img src="an.png" > -->
+        
+    </div>
+
+     <div id="flex">
+        
+
+ 
+     <div id="block"  data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+            <li>
+                <button type="button" id="reset" onClick="window.location.reload();">Reset</button>
+                <a href="index.html"><button id="reset1" >home</button></a>
+                <button id="priority-btn">
+                    <span id="prio-pref">high</span>
+                    <i class="fa fa-refresh"></i>
+                </button>
+            </li>
+            <form id="algo-form">
+                <label for="algo"><h4>CPU Scheduling Algorithms : </h4></label>
+                
+                <select name="algo" id="algo">
+                    <option value="fcfs">First Come First Serve (FCFS)</option>
+                    <option value="sjf">Shortest Job First (SJF)</option>
+                    <option value="pnp">Priority (Non Preemptive)</option>
+                    <option value="pp">Priority (Preemptive)</option>
+                  
+                </select>
+            </form>
+            <br>
+            <table class="main-table">
+                <thead>
+                    <tr>
+                        <th class="p-id">Process ID</th>
+                        <th class="priority hide">Priority</th>
+                        <th class="arrival">Arrival Time</th>
+                        <th class="process-time" colspan="1">Process Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="process-id" rowspan="2">P1</td>
+                        <td class="priority hide" rowspan="2"><input id ="dj" type="number" min="1" step="1" value="1"></td>
+                        <td class="arrival" rowspan="2"><input id="h" type="number" min="0" step="1" value="0"> </td>
+                        <td class="pro-cpu-heading" colspan="">CPU</td> 
+                        <td class="pro-btn"><button type="button" class="add-process-btn">+</button></td>
+                        <td class="process-btn"><button type="button" class="remove-process-btn">-</button></td>
+                    </tr>
+                    <tr>
+                        <td class="process-time cpu process-input"  class="add-process-btn"><input  id="k" type="number" min="1" step="1" value="1"> </td>
+    
+                    </tr>
+                </tbody>
+            </table>
+        </ol>
+            <br> 
+            <button type="button" class="add-btn">Add Process</button>
+            <button type="button" class="remove-btn">Delete Process</button>
+            <div id="context-switch-div">
+                <br>
+                <label id="l"for="context-switch">Context Switch Time : </label>
+                <input type="number" name="Context Switch" id="context-switch" min="0" step="1" value="0">
+            </div><br>
+            <div id="time-quantum" class="hide">
+                <br>
+                <label for="tq">Time Quantum : </label>
+                <input type="number" name="Time Quantum" id="tq" min="1" step="1" value="1">
+            </div>
+            <br>
+            <button type="button" id="sum">Output</button>
+            
+    </div>
+           <div id="adi" >
+             <div id="output">
+
+             </div>
+           </div>
+        
+        </div>
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+    
+    </body>
+    
+    </html>
+
+        
+   
